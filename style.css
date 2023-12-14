@@ -1,10 +1,10 @@
 .container {
-  background-image: url(/home/madvi/Documents/house-pricng/pricing-html-css/images/bg-top.svg);
+  background-image: url(./images/bg-top.svg);
   background-repeat: no-repeat;
   background-position: top right;
 }
 .outer_container {
-  background-image: url(/home/madvi/Documents/house-pricng/pricing-html-css/images/bg-bottom.svg);
+  background-image: url(./images/bg-bottom.svg);
   background-repeat: no-repeat;
   background-position: bottom left;
 }
