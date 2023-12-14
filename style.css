@@ -8,10 +8,10 @@
 #storage,
 #users,
 #send {
-  height: 3em;
+  height: 4em;
   display: flex;
   justify: center;
-  width: 160px;
+  width: 180px;
   border: solid;
   justify-content: center;
   align-items: flex-end;
@@ -21,24 +21,32 @@
   border-width: thin;
   border-color: silver;
   font: caption;
-  /*   background-color:black; */
+  font-size: 1.5em;
+  /* background-color: black; */
 }
 
 #price {
   font: caption;
   font-size: 4em;
   font-style: bold;
+  display: flex;
+  justify-content: center;
+}
+#price::first-letter {
+  font-size: 0.5em;
 }
 
 #Learnmore {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 2.5em;
+  align-self: auto;
+  height: 5em;
   width: 170px;
   border: solid;
   border-color: blue;
   border-width: thin;
+  /* background-color:#2196f3 */
   text-align: center;
   color: blue;
   font: caption;
@@ -49,8 +57,8 @@
   position: absolute;
   top: 160px;
   display: flex;
-  height: 600px;
-  width: 1000px;
+  height: 700px;
+  width: 1100px;
   align-self: center;
   justify-content: center;
   align-items: center;
@@ -161,30 +169,32 @@
 .Monthly {
   flex-direction: row;
   /*   border: 2px solid blue; */
-  height: 600px;
-  width: 1000px;
+  height: 550px;
+  width: 850px;
   display: flex;
   flex: nowrap;
   justify-content: center;
   align-items: center;
-  /*   background-color:rgb(225, 235, 252); */
-  /*   background-color:red; */
+  background-color: rgb(225, 235, 252);
+  /* background-color: red; */
 }
 .Basic,
 .Master,
 .Professional {
   font: caption;
   display: flex;
-  width: 250px;
-  height: 450px;
+  width: 295px;
+  height: 550px;
   background-color: white;
   flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
+  box-shadow: 2px 4px 10px gray;
   /*   position:relative; */
 }
 .Master,
 .Basic {
-  height: 420px;
+  height: 500px;
 }
 .Professional {
   background-image: linear-gradient(
