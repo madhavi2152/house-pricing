@@ -1,0 +1,212 @@
+.container {
+  background-image: url(/home/madvi/Documents/house-pricng/pricing-html-css/images/bg-top.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+.outer_container {
+  background-image: url(/home/madvi/Documents/house-pricng/pricing-html-css/images/bg-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+
+#storage,
+#users,
+#send {
+  height: 3em;
+  display: flex;
+  justify: center;
+  width: 160px;
+  border: solid;
+  justify-content: center;
+  align-items: flex-end;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 0px;
+  border-width: thin;
+  border-color: silver;
+  font: caption;
+  /*   background-color:black; */
+}
+
+#price {
+  font: caption;
+  font-size: 4em;
+  font-style: bold;
+}
+
+#Learnmore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5em;
+  width: 170px;
+  border: solid;
+  border-color: blue;
+  border-width: thin;
+  text-align: center;
+  color: blue;
+  font: caption;
+  font-size: 0.75em;
+  border-radius: 0.5em;
+}
+.container {
+  position: absolute;
+  top: 200px;
+  display: flex;
+  height: 650px;
+  width: 800px;
+  align-self: center;
+  justify-content: center;
+  /*   background-color:rgb(225, 235, 252); */
+  /* background-color: black; */
+}
+.outer_container {
+  display: flex;
+  /* border: 2px solid red; */
+  justify-content: center;
+  /*   background-color:rgb(225, 235, 252); */
+  /*   background-color:green; */
+  width: 1800px;
+  height: 950px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.options {
+  font: caption;
+  display: flex;
+  height: 120px;
+  width: 250px;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  top: 10px;
+  /*   background-color:green; */
+  flex-direction: column;
+  #ourpricing {
+    display: flex;
+    height: 1em;
+    font-size: 1.5em;
+    font-style: bold;
+    color: gray;
+    /*     background-color:yellow; */
+    align-self: center;
+  }
+  #buttonline {
+    display: flex;
+    width: 200px;
+    height: 3em;
+    color: gray;
+    justify-content: space-between;
+  }
+  .switch {
+    position: relative;
+    display: inline-block;
+    height: 2em;
+    width: 60px;
+  }
+
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(127, 165, 227);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+
+  input:checked + .slider {
+    background-color: #2196f3;
+  }
+
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196f3;
+  }
+
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  .slider.round {
+    border-radius: 34px;
+  }
+
+  .slider.round:before {
+    border-radius: 50%;
+  }
+}
+
+.Anually,
+.Monthly {
+  flex-direction: row;
+  /*   border: 2px solid blue; */
+  height: 600px;
+  width: 1000px;
+  display: flex;
+  flex: nowrap;
+  justify-content: center;
+  align-items: center;
+  /*   background-color:rgb(225, 235, 252); */
+  /*   background-color:red; */
+}
+.Basic,
+.Master,
+.Professional {
+  font: caption;
+  display: flex;
+  width: 250px;
+  height: 450px;
+  background-color: white;
+  flex-direction: column;
+  align-items: center;
+  /*   position:relative; */
+}
+.Master,
+.Basic {
+  height: 420px;
+}
+.Professional {
+  background-image: linear-gradient(
+    -45deg,
+    blue,
+    rgb(110, 114, 222) 60%,
+    white
+  );
+  border-radius: 0.5em;
+}
+.Professional {
+  #price,
+  #storage,
+  #users,
+  #send,
+  #Learnmore {
+    color: white;
+  }
+  #Learnmore {
+    border-color: white;
+  }
+}
