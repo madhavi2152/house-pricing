@@ -1,4 +1,4 @@
-.container {
+.outer_container {
   background-image: url(./images/bg-top.svg), url(./images/bg-bottom.svg);
   background-repeat: no-repeat;
   background-position: top right, bottom left;
@@ -8,7 +8,7 @@
 #storage,
 #users,
 #send {
-  height: 4em;
+  height: 2em;
   display: flex;
   justify: center;
   width: 180px;
@@ -18,6 +18,8 @@
   border-left: 0px;
   border-right: 0px;
   border-bottom: 0px;
+  padding-top: 10px;
+  padding-bottom: 0px;
   border-width: thin;
   border-color: silver;
   font: caption;
@@ -27,7 +29,7 @@
 
 #price {
   font: caption;
-  font-size: 4em;
+  font-size: 3em;
   font-style: bold;
   display: flex;
   justify-content: center;
@@ -37,42 +39,48 @@
 }
 
 #Learnmore {
+  /* background-color: cornflowerblue; */
   display: flex;
   justify-content: center;
   align-items: center;
   align-self: auto;
-  height: 5em;
+  height: 8em;
   width: 170px;
   border: solid;
   border-color: blue;
   border-width: thin;
   /* background-color:#2196f3 */
   text-align: center;
-  color: blue;
+  color: white;
   font: caption;
-  font-size: 0.75em;
+  font-size: 0.95em;
   border-radius: 0.5em;
+}
+.con {
+  display: flex;
+  justify-content: center;
 }
 .container {
   position: absolute;
   top: 160px;
   display: flex;
   height: 700px;
-  width: 1100px;
+  width: 800px;
   align-self: center;
   justify-content: center;
   align-items: center;
-  background-color: rgb(225, 235, 252);
-  /* background-color: black; */
+  background-color: (240, 78%, 98%);
+  /* background-color: rgb(225, 235, 252);
+  background-color: black; */
 }
 .outer_container {
   display: flex;
   /* border: 2px solid red; */
   /* justify-content: center; */
-  background-color: white;
+  background-color: hsl(240, 78%, 98%);
   /* background-color: green; */
   width: 1800px;
-  height: 800px;
+  height: 1000px;
   flex-direction: column;
   align-items: center;
 }
@@ -175,7 +183,7 @@
   flex: nowrap;
   justify-content: center;
   align-items: center;
-  background-color: rgb(225, 235, 252);
+  background-color: hsl(240, 78%, 98%);
   /* background-color: red; */
 }
 .Basic,
@@ -195,6 +203,14 @@
 .Master,
 .Basic {
   height: 500px;
+  #Learnmore {
+    background-image: linear-gradient(
+      -45deg,
+      blue,
+      rgb(110, 114, 222) 60%,
+      white
+    );
+  }
 }
 .Professional {
   background-image: linear-gradient(
@@ -203,6 +219,7 @@
     rgb(110, 114, 222) 60%,
     white
   );
+  /* background-color: hsl(234, 14%, 74%); */
   border-radius: 0.5em;
 }
 .Professional {
@@ -214,9 +231,13 @@
     color: white;
   }
   #Learnmore {
+    color: blue;
     border-color: white;
+    background-color: white;
+    height: 4em;
   }
 }
+
 .Monthly {
   display: none;
 }
