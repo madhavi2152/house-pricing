@@ -10,7 +10,7 @@
 #send {
   height: 2em;
   display: flex;
-  justify: center;
+  justify-content: center;
   width: 180px;
   border: solid;
   justify-content: center;
@@ -22,16 +22,18 @@
   padding-bottom: 0px;
   border-width: thin;
   border-color: silver;
-  font: caption;
-  font-size: 1.5em;
+  /* font: caption; */
+  font-size: 1em;
 
   /* background-color: black; */
 }
+body {
+  font-family: "Montserrat", sans-serif;
+}
 
 #price {
-  font: caption;
   font-size: 3em;
-  font-style: bold;
+  /* font-style: bold; */
   display: flex;
   justify-content: center;
   /* background-color: black; */
@@ -46,7 +48,7 @@
   justify-content: center;
   align-items: center;
   align-self: auto;
-  height: 8em;
+  height: 3em;
   width: 170px;
   border: solid;
   border-color: blue;
@@ -54,8 +56,8 @@
   /* background-color:#2196f3 */
   text-align: center;
   color: white;
-  font: caption;
-  font-size: 0.95em;
+  /* font: caption; */
+  font-size: 0.9em;
   border-radius: 0.5em;
 }
 .con {
@@ -88,7 +90,7 @@
 }
 
 .options {
-  font: caption;
+  /* font: caption; */
   display: flex;
   height: 120px;
   width: 250px;
@@ -102,7 +104,7 @@
     display: flex;
     height: 1em;
     font-size: 1.5em;
-    font-style: bold;
+    /* font-style: bold; */
     color: gray;
     /*     background-color:yellow; */
     align-self: center;
@@ -180,7 +182,7 @@
   flex-direction: row;
   /*   border: 2px solid blue; */
   height: 550px;
-  width: 850px;
+  width: 960px;
   display: flex;
   flex: nowrap;
   justify-content: center;
@@ -192,12 +194,12 @@
 .Master,
 .Professional {
   #texte {
-    font-size: 25px;
+    font-size: 1.5em;
     /* background-color: green; */
   }
-  font: caption;
+  /* font: caption; */
   display: flex;
-  width: 300px;
+  width: 320px;
   height: 590px;
   background-color: white;
   flex-direction: column;
@@ -210,21 +212,32 @@
 .Basic {
   height: 540px;
   #Learnmore {
-    background-image: linear-gradient(
+    /* background-image: linear-gradient(
       -45deg,
       blue,
       rgb(110, 114, 222) 60%,
       white
+    ); */
+    background-image: linear-gradient(
+      -45deg,
+      hsl(236, 72%, 79%),
+      hsl(237, 63%, 64%)
     );
   }
 }
 .Professional {
+  color: white;
   background-image: linear-gradient(
+    -45deg,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
+  /* background-image: linear-gradient(
     -45deg,
     blue,
     rgb(110, 114, 222) 60%,
     white
-  );
+  ); */
   /* background-color: hsl(234, 14%, 74%); */
   border-radius: 0.5em;
 }
@@ -238,6 +251,11 @@
   }
   #Learnmore {
     color: blue;
+    /* background-image: linear-gradient(
+      -45deg,
+      hsl(236, 72%, 79%),
+      hsl(237, 63%, 64%)
+    ); */
     border-color: white;
     background-color: white;
     height: 4em;
@@ -246,4 +264,33 @@
 
 .Monthly {
   display: none;
+}
+.Basic:hover {
+  transform: scale(1.2);
+  #Learnmore {
+    border-color: blue;
+    background-image: linear-gradient(-45deg, white, white);
+    color: blue;
+  }
+}
+.Professional:hover {
+  transform: scale(1.2);
+  #Learnmore {
+    border-color: white;
+    /* background-image: linear-gradient(-45deg, blue, rgb(154, 154, 235)); */
+    background-image: linear-gradient(
+      -45deg,
+      hsl(236, 72%, 79%),
+      hsl(237, 63%, 64%)
+    );
+    color: white;
+  }
+}
+.Master:hover {
+  transform: scale(1.2);
+  #Learnmore {
+    border-color: blue;
+    background-image: linear-gradient(-45deg, white, white);
+    color: blue;
+  }
 }
