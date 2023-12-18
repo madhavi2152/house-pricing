@@ -267,6 +267,7 @@ body {
 }
 .Basic:hover {
   transform: scale(1.2);
+  cursor: pointer;
   #Learnmore {
     border-color: blue;
     background-image: linear-gradient(-45deg, white, white);
@@ -275,6 +276,7 @@ body {
 }
 .Professional:hover {
   transform: scale(1.2);
+  cursor: pointer;
   #Learnmore {
     border-color: white;
     /* background-image: linear-gradient(-45deg, blue, rgb(154, 154, 235)); */
@@ -288,6 +290,7 @@ body {
 }
 .Master:hover {
   transform: scale(1.2);
+  cursor: pointer;
   #Learnmore {
     border-color: blue;
     background-image: linear-gradient(-45deg, white, white);
